@@ -7,4 +7,50 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    /* debug for eyes */
+    background-color: rgb(83, 83, 82);
 }
+
+/* I breakepoint sono:
+- tablet: 768px
+- desktop: 992px
+- large desktop: 1200px */
+
+/* COMMONS */
+
+:root {
+    --mainblu: #0084FD;
+    --secondblu:#B5DDFF;
+    --maincolor:#9792E4;
+    --freecolor:#FDC15F;
+    --footercolor:#333333;
+}
+
+
+.main-container {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bot-container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER  */
+
+header {
+    width: 100%;
+    background-color: var(--mainblu);
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+}
+
