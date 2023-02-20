@@ -143,6 +143,21 @@ header {
 }
 
 
+            /* SIXTH SECTION, TRY FREE */
+
+.try {
+    background-color: var(--maincolor);
+    padding: 20px 0;
+}
+
+.try .last {
+    width: 100%;
+    height: 200px;
+    /* debug */
+    border: 1px solid orange;
+}
+
+
 /* ###################################################################################### */
 
 /* RESPONSIVE FOR DISPLAY >= 768px */
@@ -198,6 +213,14 @@ header {
     }
 
 
+            /* SIXTH SECTION, TRY FREE */
+        
+    .try .last {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
 }
 
 
@@ -209,15 +232,23 @@ header {
 
 @media screen and (min-width:992px) {
 
-    /* SECOND SECTION,BACKGROUND VIOLET  */
+             /* SECOND SECTION,BACKGROUND VIOLET  */
     .planning .main-container {
         display: flex;
     }
 
-    /* FOURTH SECTION  */
+            /* FOURTH SECTION  */
 
     .benefit .col {
         width: calc(100% / 3 - 10px);
+    }
+
+
+          /* SIXTH SECTION, TRY FREE */
+        
+    .try .last {
+        width: 50%;
+        margin: 0 auto;
     }
 
 }
