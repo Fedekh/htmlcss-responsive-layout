@@ -37,6 +37,8 @@ body {
     width: 50%;
     max-width: 1200px;
     margin: 0 auto;
+    /* debug */
+    border: 1px solid red;
 }
 
 .flex {
@@ -158,6 +160,27 @@ header {
 }
 
 
+            /* FOOTER  */
+
+footer {
+    background-color: var(--footercolor);
+    width: 100%;
+    height: 150px;
+    /* margin: 10px 0; */
+    /* padding: 10px 0; */
+}
+
+footer .top-footer,
+footer .bot-footer {
+    border: 1px solid white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    
+}
+
+
+
 /* ###################################################################################### */
 
 /* RESPONSIVE FOR DISPLAY >= 768px */
@@ -167,7 +190,7 @@ header {
             /* FIRST SECTION */
 
     .row .big-col {
-        width: calc(100% / 3 * 2 );
+        width: calc((100% / 3 * 2) - calc(20px / 2));
         height: 200px;
     }
 
@@ -220,6 +243,11 @@ header {
         margin: 0 auto;
     }
 
+            /* FOOTER SECTION */
+     
+    footer .bot-container {
+        width: 30%;
+    }        
 
 }
 
