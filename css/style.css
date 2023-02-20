@@ -50,6 +50,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* ################################################################################# */
+
 /* HEADER  */
 
 header {
@@ -60,12 +63,12 @@ header {
     z-index: 999;
 }
 
-
+/* #################################################################################### */
 
 /* MAIN */
 
 
-                    /* FIRST SECTION */
+/* FIRST SECTION */
 
 .feature {
     padding: 100px 0 20px 0;
@@ -85,7 +88,7 @@ header {
 }
 
 
-                /* SECOND SECTION  */
+/* SECOND SECTION  */
 
 .planning {
     background-color: var(--maincolor);
@@ -101,7 +104,7 @@ header {
     margin: 20px 0;
 }
 
-                /* THIRD SECTION, PARTNERS, BACKGROUD WHITE */
+/* THIRD SECTION, PARTNERS, BACKGROUD WHITE */
 
 .testimonial .partners {
     /* debug */
@@ -111,7 +114,7 @@ header {
     margin: 30px 0;
 }
 
-            /* FOURTH SECTION, BENEFITS , BACKGROUND COLOR VIOLET */
+/* FOURTH SECTION, BENEFITS , BACKGROUND COLOR VIOLET */
 
 .benefit {
     background-color: var(--maincolor);
@@ -123,7 +126,7 @@ header {
     height: 200px;
 }
 
-            /* FIFTH SECTION, ABOUT US */
+/* FIFTH SECTION, ABOUT US */
 
 .about {
     margin: 20px 0;
@@ -145,7 +148,7 @@ header {
 }
 
 
-            /* SIXTH SECTION, TRY FREE */
+/* SIXTH SECTION, TRY FREE */
 
 .try {
     background-color: var(--maincolor);
@@ -160,7 +163,7 @@ header {
 }
 
 
-            /* FOOTER  */
+/* FOOTER  */
 
 footer {
     background-color: var(--footercolor);
@@ -187,22 +190,29 @@ footer .bot-footer {
 
 @media screen and (min-width:768px) {
 
-            /* FIRST SECTION */
+       /* FIRST SECTION */
 
     .row .big-col {
-        width: calc((100% / 3 * 2) - calc(20px / 2));
+        width: calc((100% / 3 * 2) - 5px);
+        height: 200px;
+    }
+
+    .row .second-col{
+        width: calc(100% / 3 - 5px);
         height: 200px;
     }
 
     .row div {
-        width: calc(100% / 3 - calc(20px / 2));
+        width: calc(100% / 3 - 7px);
         height: 200px;
     }
+
 
     .row {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        padding-right: 0;
     }
 
 
@@ -232,7 +242,7 @@ footer .bot-footer {
 
     .about .main-container {
         display: flex;
-        gap: 20px;
+        gap: 15px;
     }
 
 
