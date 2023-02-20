@@ -26,6 +26,19 @@ body {
     --footercolor:#333333;
 }
 
+ul {
+    list-style-type: none;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
 
 .main-container {
     width: 70%;
@@ -44,6 +57,8 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .flex-wrap {
@@ -61,6 +76,11 @@ header {
     height: 60px;
     position: fixed;
     z-index: 999;
+    color: white;
+}
+
+header .long-menu {
+    display: none;
 }
 
 /* #################################################################################### */
@@ -270,19 +290,41 @@ footer .bot-footer {
 
 @media screen and (min-width:992px) {
 
-             /* SECOND SECTION,BACKGROUND VIOLET  */
+    /* HEADER */
+    header .menu {
+        display: none;
+    }
+
+    header .long-menu {
+        display: inline-block;
+    }
+
+    .long-menu li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .long-menu #start {
+        color: black;
+        padding: .5em 1em;
+        background-color: white;
+        border-radius: 4em / 4em;
+    }
+
+
+    /* SECOND SECTION,BACKGROUND VIOLET  */
     .planning .main-container {
         display: flex;
     }
 
-            /* FOURTH SECTION  */
+    /* FOURTH SECTION  */
 
     .benefit .col {
         width: calc(100% / 3 - 10px);
     }
 
 
-          /* SIXTH SECTION, TRY FREE */
+    /* SIXTH SECTION, TRY FREE */
         
     .try .last {
         width: 50%;
