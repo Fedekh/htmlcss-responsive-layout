@@ -40,6 +40,14 @@ img {
     max-width: 100%;
 }
 
+h3 {
+    font-size: 1rem;
+}
+
+p{
+    font-size: .8em;
+}
+
 .main-container {
     width: 70%;
     max-width: 1200px;
@@ -95,17 +103,78 @@ header .long-menu {
 }
 
 
-.row div {
+.row > div {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     margin: 20px 0;
+    background-color: var(--secondblu);
+    border-radius: 1em;
     /* debug */
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .row .big-col {
-    height: 200px;
+    height: 450px;
+    position: relative;
 }
+
+.big-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.description{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 10px;
+}
+
+.col h3 {
+    color: var(--mainblu);
+}
+
+.big-col .phone,
+.description h3,
+.description p,
+.description a {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.feature a{
+    padding: .5em 1em;
+    background-color: var(--mainblu);
+    border-radius: 2em;
+    
+}
+
+.col .phone {
+    width: 80%;
+    max-width: 200px;
+    position: relative;
+    bottom: -130px;
+}
+
+.row .col:not(:first-child) i {
+    font-size: 3rem;
+    color: var(--mainblu);
+}
+
+.row .col:not(:first-child){
+    text-align: center;
+    padding: 20px 0;
+}
+
+.feature .row .col h3{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
 
 
 /* SECOND SECTION  */
@@ -214,17 +283,19 @@ footer .bot-footer {
 
     .row .big-col {
         width: calc((100% / 3 * 2) - 5px);
-        height: 200px;
+        height: 350px;
+        align-items: flex-start;
     }
 
+    
     .row .second-col{
         width: calc(100% / 3 - 5px);
-        height: 200px;
+        /* height: 200px; */
     }
 
     .row div {
         width: calc(100% / 3 - 7px);
-        height: 200px;
+        /* height: 200px; */
     }
 
 
@@ -234,6 +305,18 @@ footer .bot-footer {
         gap: 10px;
         padding-right: 0;
     }
+
+    .row .description {
+        width: 100%;
+    }
+
+    .col .phone {
+        width: 40%;
+        bottom: -90px;
+    }
+
+    
+
 
 
             /* THIRD SECTION */
@@ -311,6 +394,26 @@ footer .bot-footer {
         border-radius: 4em / 4em;
     }
 
+
+    /* FIRST SECTION CARDS */
+
+
+    .row .big-col {
+        display: flex;
+    }
+    /* .row .big-col{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .big-col .description {
+        max-width: 50%;
+    }
+
+    .big-col .phone {
+        max-width: 50%;
+    } */
 
     /* SECOND SECTION,BACKGROUND VIOLET  */
     .planning .main-container {
