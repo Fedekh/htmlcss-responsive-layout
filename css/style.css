@@ -114,31 +114,29 @@ header .long-menu {
 }
 
 .row .big-col {
-    height: 450px;
-    position: relative;
+    /* height: 450px; */
+    /* position: relative; */
 }
 
 .big-col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    
 }
 
 .description{
     max-width: 100%;
     text-align: center;
     margin-bottom: 40px;
-    position: absolute;
-    top: 10px;
+    
 }
 
 .col h3 {
     color: var(--mainblu);
 }
 
-.big-col .phone,
+
 .description h3,
 .description p,
 .description a {
@@ -155,9 +153,11 @@ header .long-menu {
 
 .col .phone {
     width: 80%;
-    max-width: 200px;
-    position: relative;
-    bottom: -130px;
+    max-width: 200px;    
+}
+
+.col .phone img {
+    display: block;
 }
 
 .row .col:not(:first-child) i {
@@ -182,25 +182,71 @@ header .long-menu {
 .planning {
     background-color: var(--maincolor);
     padding: 30px 0;
+    
 }
 
 .planning .card-a,
 .planning .card-b  {
-    /* debug */
-    border: 1px solid red;
-    width: 100%;
-    height: 200px;
     margin: 20px 0;
+    width: 70%;
+    /* debug */
+    /* border: 1px solid red; */
+    /* height: 200px; */
 }
+
+.planning .card-a h3, .planning .card-a p {
+    margin: 20px 0;
+    color: white;
+}
+
+.planning .card-b {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.planning .card-b a {
+    background-color: var(--maincolor);
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          
+}
+
+
+
+
+.planning .card-a,
+.planning .card-b {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.planning .card-b i{
+    color: black;
+    
+}
+
+
+
 
 /* THIRD SECTION, PARTNERS, BACKGROUD WHITE */
 
 .testimonial .partners {
-    /* debug */
     width: 100%;
-    height: 100px;
+    /* debug */
+    /* height: 100px; */
     border: 1px solid blue;
     margin: 30px 0;
+}
+
+.testimonial img {
+    width: 50%;
+    border-radius: 50%;
 }
 
 /* FOURTH SECTION, BENEFITS , BACKGROUND COLOR VIOLET */
@@ -283,19 +329,20 @@ footer .bot-footer {
 
     .row .big-col {
         width: calc((100% / 3 * 2) - 5px);
-        height: 350px;
         align-items: flex-start;
     }
 
-    
+    .big-col .phone {
+        display: block;
+    }
     .row .second-col{
         width: calc(100% / 3 - 5px);
-        /* height: 200px; */
+        
     }
 
     .row div {
         width: calc(100% / 3 - 7px);
-        /* height: 200px; */
+        
     }
 
 
@@ -308,18 +355,27 @@ footer .bot-footer {
 
     .row .description {
         width: 100%;
+        text-align: left;
+        padding-left: 20px;
     }
 
     .col .phone {
         width: 40%;
-        bottom: -90px;
+        
     }
 
     
 
+    /* SECOND SECTION */
+
+    .planning .card-a,
+    .planning .card-b {
+        margin: 0 auto;
+        width: 70%;
+    }
 
 
-            /* THIRD SECTION */
+    /* THIRD SECTION */
 
     .testimonial .partners {
         /* debug */
@@ -399,25 +455,28 @@ footer .bot-footer {
 
 
     .row .big-col {
-        display: flex;
-    }
-    /* .row .big-col{
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-end;
+        
     }
-
+    
+    
     .big-col .description {
         max-width: 50%;
     }
 
     .big-col .phone {
         max-width: 50%;
-    } */
+    }
 
     /* SECOND SECTION,BACKGROUND VIOLET  */
     .planning .main-container {
         display: flex;
+    }
+
+    .planning .card-b {
+        margin-top: 130px;
     }
 
     /* FOURTH SECTION  */
