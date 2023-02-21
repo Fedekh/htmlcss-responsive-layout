@@ -105,7 +105,6 @@ header .long-menu {
 
 .row > div {
     width: 100%;
-    /* height: 100px; */
     margin: 20px 0;
     background-color: var(--secondblu);
     border-radius: 1em;
@@ -113,10 +112,6 @@ header .long-menu {
     /* border: 1px solid green; */
 }
 
-.row .big-col {
-    /* height: 450px; */
-    /* position: relative; */
-}
 
 .big-col {
     display: flex;
@@ -284,10 +279,34 @@ header .long-menu {
     padding: 30px 0;
 }
 
-.benefit .col {
-    width: 100%;
-    height: 200px;
+.benefit > h3 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
 }
+.benefit .row .col {
+    padding: 10px 20px 40px 20px;
+    text-align: start;
+    background-color: white;
+    
+}
+
+.benefit .row .col > * {
+    padding: 10px 0;
+}
+
+.benefit .row .col h2, .benefit .row .col h3 {
+    color: var(--maincolor);
+    font-size: 1.5rem;
+}
+
+.benefit .row .col a {
+    background-color: var(--maincolor);
+    padding: 5px 15px;
+    border-radius: 20px;
+    
+}
+
 
 /* FIFTH SECTION, ABOUT US */
 
@@ -436,10 +455,18 @@ footer .bot-footer {
         width: calc(100% / 2 - 10px);
     }
 
+    .benefit > h3 {
+        font-size: 2rem;
+    }
+
     .benefit .row {
         display: flex;
         flex-wrap: wrap;
     
+    }
+
+    .benefit .row .col h2 {
+        font-size: 3rem;
     }
 
             /* FIFTH SECTION, ABOUT US */
@@ -534,7 +561,11 @@ footer .bot-footer {
         width: calc(100% / 3 - 10px);
     }
 
+    .benefit > h3 {
+        font-size: 2.5rem;
+    }
 
+    
     /* SIXTH SECTION, TRY FREE */
         
     .try .last {
