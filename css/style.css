@@ -207,8 +207,8 @@ header .long-menu {
 .planning .card-b a {
     background-color: var(--maincolor);
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     margin: 10px auto;
     border-radius: 50%;
     display: flex;
@@ -217,7 +217,9 @@ header .long-menu {
           
 }
 
-
+.planning img {
+    max-width: 80%;
+}
 
 
 .planning .card-a,
@@ -227,8 +229,7 @@ header .long-menu {
 }
 
 .planning .card-b i{
-    color: black;
-    
+    color: black;    
 }
 
 
@@ -471,13 +472,17 @@ footer .bot-footer {
     }
 
     /* SECOND SECTION,BACKGROUND VIOLET  */
+
     .planning .main-container {
         display: flex;
+        gap: 20px;
     }
 
     .planning .card-b {
         margin-top: 130px;
     }
+
+
 
     /* FOURTH SECTION  */
 
