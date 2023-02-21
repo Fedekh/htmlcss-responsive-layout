@@ -415,17 +415,20 @@ footer {
     background-color: var(--footercolor);
     width: 100%;
     height: 150px;
+    padding: 5px 0;
+    text-align: center;
     /* margin: 10px 0; */
     /* padding: 10px 0; */
 }
 
 footer .top-footer,
 footer .bot-footer {
-    border: 1px solid white;
-    width: 100%;
-    height: 70px;
-    margin-bottom: 10px;
+   margin: 20px 0;   
     
+}
+
+footer a {
+    color: var(--maincolor);
 }
 
 
@@ -573,7 +576,7 @@ footer .bot-footer {
             /* FOOTER SECTION */
      
     footer .bot-container {
-        width: 30%;
+        width: 60%;
     }        
 
 }
@@ -672,7 +675,12 @@ footer .bot-footer {
     .try .last h4 > a {
         width: 85%;
     }
+
     
+    footer .bot-container {
+        width: 70%;
+        
+    }
 }
 
 
@@ -684,4 +692,11 @@ footer .bot-footer {
 
 @media screen and (min-width:1200px) {
 
+    .main-container {
+        max-width: 1200px;
+    }
+
+    .bot-container {
+        max-width: 70%;
+    }
 }
